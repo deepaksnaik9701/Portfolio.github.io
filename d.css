@@ -1,0 +1,633 @@
+body{
+    
+     padding: 0;
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     
+}
+@media (max-width:360px){
+    body{
+        margin: 0;
+        padding: 0;
+
+
+    }
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    height: 100vh;
+    width: 125px;
+   position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#222;
+    
+
+}
+@media(max-width:360px){
+    .header{
+        height: 740px;
+        width: 90px;
+        background-color:#222;
+        border: 1px solid red;
+        position: fixed;
+    }
+
+}
+.photo {
+    height: fit-content;
+    width: fit-content;
+}
+.photo img {
+    width: 125px;
+    border-radius: 20%;
+    margin-left: -3%;
+    margin-top: 3%;
+    opacity: 0.8;
+}
+@media (max-width:360px){
+    .photo img{  
+        width: 90px;
+        border-radius: 25%;
+        margin-left: 1%;
+
+    }
+   
+
+}
+.content{
+    width: 125px;
+    height: 76vh;
+}
+@media (max-width:360px){
+    .content{
+        width: 90px;
+        height: 705px;
+    }
+}
+.content  li {
+     list-style: none;
+     color: rgb(81, 90, 91);
+     width: 125px;
+     height: 10vh;
+     margin-top: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+@media (max-width:360px){
+    .content li{
+        width: 90px;
+        height: 8vh;
+        margin-top: 30px;
+        text-align: center;
+        color: rgb(81, 90, 91);
+        font-weight: bolder;
+    
+        }
+}
+.content .dee:hover{
+    background-color: black;
+}
+ .sidenav{
+     margin-left: 125px;
+       height: 100vh;
+       overflow:hidden;
+       background-color: black; 
+       position: relative; 
+    
+ }
+ @media (max-width:360px){
+     .sidenav{
+         margin-left: 90px;
+         height: 740px;
+         background-color: black;
+         position: relative;
+         overflow: hidden;
+     }
+ }
+ 
+.info{
+       width: 400px;
+       height: 55vh;
+       position: absolute;
+       top: 15%;
+       left: 10%;
+}
+.text  h2{
+     color:#ffbd39;
+     font-weight: 800;
+     font-size: 3rem;
+}
+.text {
+    color: antiquewhite;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+.text span{
+    font-weight: 600;
+    color: rgb(17, 239, 165);
+    font-size: smaller;
+
+}
+.foot button {
+     width: 90px;
+     height: 6vh;
+     color: white;
+     background-color: #184a1f;
+     border-radius: 30%;
+     margin-top: 20px;
+     cursor: pointer;
+     font-weight: 400;
+}
+@media (max-width:360px){
+    .info{
+        width: 250px;
+        height: 30vh;
+        position: relative;
+        left: 10%;
+    }
+    .text h2 {
+        color:#ffbd39;
+     font-weight: 300;
+     font-size: 1rem;
+    }
+    .text{
+        color: antiquewhite;
+    font-weight: 300;
+    font-size: 1rem;
+    }
+    .text span{
+    font-weight: 300;
+    color: rgb(17, 239, 165);
+    font-size: smaller;
+    }
+    .foot button{
+    width: 90px;
+     height: 6vh;
+     color: white;
+     background-color: #184a1f;
+     border-radius: 30%;
+     margin-top: 20px;
+     cursor: pointer;
+     font-weight: 300;
+    }
+    .media{
+        height: 15vh;
+        width: 360px;
+
+    }
+    .media i{
+    color: rgb(12, 216, 220);
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    left: -15%;
+
+    }
+    
+}
+
+.media{
+    height: 20vh;
+    width: fit-content;
+}
+.media a{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    top: 15%;
+} 
+.right{
+
+    width:300px;
+    height:70vh;
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+
+
+
+}
+.box img{
+    width: 300px;
+    height: auto;
+    position: relative; 
+   border:2px solid #fff;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 20px 20px 5px 2px #ccc;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px; 
+  animation: zoomin 4s linear 1;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+} 
+
+@keyframes zoomin  {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+
+}
+@media (max-width:360px){
+    .right{
+        width:300px;
+        height:50vh;
+        position:absolute;
+        left: 10%;
+        top: 50%;
+        
+    }
+    .box img {
+        width: 150px;
+        height: 40vh;
+        position: absolute; 
+       border:2px solid #fff;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      box-shadow: 20px 20px 5px 2px #ccc;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      border-radius:25px;
+    }
+}
+ /* section for about  page */
+ .about{
+      width: 100%;
+      height: 100vh;
+       position: relative;
+       background-color: black;
+       
+ }
+ .d span{
+     font-size: 4rem;
+     font-weight: 900;
+     width: fit-content;
+     height: fit-content;
+     position: relative;
+     top: 5%;
+      left: 30%;
+      box-sizing: border-box;
+      box-shadow: 20px 20px 4px #ffbd39;
+      border-radius: 30%;
+      color: white;
+      animation-name: example;
+      animation-duration: 6s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+      overflow: hidden;
+    }
+
+    @keyframes example {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100% {color: green;}
+      }
+
+    
+
+ .myself{
+     margin-left:125px ;
+     height: 100vh;
+    
+     position: relative;
+ }
+  .main {
+      width: 100%;
+      height: 70vh;
+      position: relative;
+      top: 10%;
+  }
+ .left{
+       width: 300px;
+       height: fit-content; 
+       position: relative;
+       left: 12%;
+       top: -1%;
+ }
+ .left img {
+     width: 300px;
+     height: auto;
+     position: absolute;
+     border:  2px dashed green;
+     left: 20%;
+     box-shadow: 30px 30px 20px 2px red;
+     border-radius: 30%;
+    
+ }
+.rightside{
+     width: 450px;
+     height:70vh;
+     position:relative;
+     left: 44%;
+     top: 7%;
+     animation: mymove 5s infinite;
+    
+}
+.rightside p{
+     font-size: 1.2rem;
+     color: whitesmoke;
+
+} 
+.lists{
+    width: 100%;
+    height: 50vh;
+    display: inline-block;
+    padding: 0;
+    margin: 0;  
+}
+
+.lists li {
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 13px ;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    animation-timing-function: linear;
+   
+}
+
+.d-flex span:first-child{
+    width: 165px;
+    font-size: 1.5rem;
+    color:whitesmoke;
+    font-weight: 600;
+}
+.d-flex span:last-child{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: bisque;
+    width: 230px;
+    animation-timing-function: linear;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 400px;}
+  }
+ 
+  .container{  
+      height:100vh;
+      background-color: black;
+      margin-left: 125px;
+
+  }
+  .name{
+      width: 100%;
+      height: 8opx;
+      
+  }
+  .name span{
+      font-size: 4rem;
+      font-weight: 900;
+      width: 100px;
+      height: 80px;
+      color: white;
+      position: relative;
+      left: 500px;
+      top: 30px;
+      
+      animation-name: movement;
+      animation-duration: 15s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+  }
+  @keyframes movement {
+    0%   {color:red; left:0px; top:0px;}
+    50%  {color:yellow; left:500px; top:0px;}
+    100%  {color:blue; left:500px; top:30px;}
+  }
+  .ulli{
+      width:85%;
+      height: auto;
+      position: relative;
+      top:5% ;
+      left: 5%;
+  }
+  .pid{
+     width: 500px;
+      height: 30vh;
+     background-color: #ffbd39;
+       border: 2px solid rgb(235, 2, 2);
+       margin: 30px;
+       display: inline-flex;
+       border-radius: 20%; 
+       perspective: 1000px;
+    }
+  .pid img{
+      width: 100%;
+      border-radius: 20%;
+      background-size: cover;
+       background-repeat: no-repeat;
+  }
+      .pid:hover {
+        transform:scale(1.2);
+        opacity: 1;
+        
+      }
+
+      /* skills css begin*/
+
+      .skill{
+          margin-left: 125px;
+          height: 100vh;
+          background-color: black;
+        
+      }
+       .title{
+           width: 100%;
+           height: 10vh;
+           
+       }
+       .title span{
+           font-size: 3rem;
+           color: bisque;
+           position: relative;
+           left: 38%;
+           font-weight: 900;
+           top: 15%;
+       }
+       .row{
+           width: calc(100%-100px);
+           height: 80vh;
+           position:relative ;
+          
+       }
+       .item{
+          position: relative;
+          top: 20%;
+          width: fit-content;
+          height: 20vh;
+          display: inline-block;
+          margin-left: 40px;
+
+     
+       }
+       .item-text{
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 600;
+        font-size: 1.3rem;
+        position: relative;
+        width: 600px ;
+        color: white;
+       }
+       .row .item-text span:last-child{
+        position: absolute;
+    }
+     .item-text .w-60{
+        margin-left: 60%;
+    }
+    .item-text .w-50{
+        margin-left: 30%;
+    }
+     .item-text .w-30{
+        margin-left: 30%;
+    }
+    .item-text .w-n{
+        margin-left:30%;
+    }
+    .item-text .w-n{
+        margin-left:30%;
+    }
+    .item-text .w-50{
+        margin-left:50%;
+    }
+    .progress{
+        margin: 0.8rem  0;
+        border-radius: 10px;
+        height: 16px;
+        width: 90%;
+        background-color:red;
+        overflow: hidden;
+        
+    }
+    .progress-bar{
+        background: burlywood;
+        height: 100%;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    .progress-bar.w-60{
+        width: 60%;
+    }
+    .progress-bar.w-50{
+        width: 50%;
+    }
+    .progress-bar.w-30{
+        width: 30%;
+    }
+    .progress-bar.w-n{
+        width: 50%;
+        opacity: 0.7;
+    }
+    .progress-bar.w-n{
+        width: 50%;
+    }
+    .progress-bar.w-50{
+        width: 50%;
+    }
+/* footer css will start now */
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+.footer{
+    width: 100%;
+    height: 100vh;
+    margin-top: -1%;
+    position: relative;
+
+}
+.bottom{
+  margin-left: 125px;
+  height: 100vh;
+}
+
+.col{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.col video{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    
+}
+.btitle{
+    width: 500px;
+    height: 25vh;
+    position: absolute;
+    top: 30%;
+    left: 35%; 
+    border-radius: 30px;
+   
+    animation: zoom 4s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+
+}  
+@keyframes zoom {
+    0%{  background-color: red;
+         left:0px; top:0px;
+        transform: scale(0.5);
+        visibility: visible; 
+    }
+    50%{
+        left: 450px; top: 150px;
+        background-color: blue;
+    }
+    100%{
+        background-color: #444343;
+        opacity: 0.6;
+        left:450px; top:300px;
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+.btitle span{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+   position: relative;
+   animation: glow 1s ease-in-out infinite alternate
+}
+   
+
+   
+.btitle a {
+    font-size: 2rem;
+    color: rgb(235, 10, 10);
+    border: 2px solid red;
+    border-radius: 30%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    line-height:2;
+    background-color: aqua;
+    left:  30%;
+    top: 30%;   
+    text-decoration: none;
+} 
+.btitle a :hover { 
+    cursor: pointer;
+} 
